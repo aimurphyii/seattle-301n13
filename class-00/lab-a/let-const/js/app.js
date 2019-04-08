@@ -30,12 +30,12 @@ function makeRandom() {
 
 function displayPics(){
   while(viewed.length < 6){
-    var rando = makeRandom();
+    let rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
   }
-  console.log(rando);
+  // console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `const`.
   //const is scoped only to the block of code it exists in, so it was undefined when we tried ot call outside of it.
   console.log(viewed);
